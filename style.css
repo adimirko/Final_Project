@@ -292,6 +292,8 @@ body {
 }
 
 .portfolio__card-content {
+    height: 144px;
+    width: 100%;
     display: flex;
     position: absolute;
     bottom: 0;
