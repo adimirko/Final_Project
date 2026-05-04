@@ -27,7 +27,7 @@ body {
 
 .hero {
     min-height: 1020px;
-    background-image: url(img/bg_hero.png);
+    background-image: url(img/image_bg_new.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -172,26 +172,182 @@ body {
     background: #0C3D54;
 }
 
-.about {
-    display: flex;
-    padding: 120px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
+.heading {
+    color: var(--Brand-Primary, #052838);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 100% */
 }
 
-.about__container center {
+.padding-tb {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about {}
+
+.about__content {
     display: flex;
-    min-width: 334px;
     align-items: center;
     gap: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about__info {
+    max-width: 788px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.about__title {}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about__button {}
+
+.about__picture {}
+
+.about__img {}
+
+/* ========= PORTFOLIO SECTION ========= */
+.portfolio__top {
+    display: flex;
+    width: 1680px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.portfolio__description {
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    max-width: 700px;
     align-self: stretch;
 }
 
-.about__image {
-    width: 828px;
-    height: 600px;
-    border-radius: 12px;
-    background: url(img/Image_about.png) lightgray -3px -45.673px / 101.087% 209.224% no-repeat;
+.portfolio__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.portfolio__cards {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.portfolio__card {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height: 544px;
+    /* padding-top: 400px; */
+    justify-content: center;
+    align-items: center;
+    POSITION: RELATIVE;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+.portfolio__card:hover {
+    transform: translateY(-4px);
+}
+
+.portfolio__card-image {
+    width: 100%;
+    height: 544px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.portfolio__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio__card:hover .portfolio__card-image img {
+    transform: scale(1.02);
+}
+
+.portfolio__card-content {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 24px;
+    flex-direction: column;
+    gap: 8px;
+    background: #052838;
+}
+
+.portfolio__card-title {
+    color: var(--Grayscale-000, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* H4 */
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.portfolio__card-text {
+    color: var(--Grayscale-300, #D7DAE2);
+
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.portfolio__navigation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #375360;
+}
+
+.portfolio__nav-current {
+    color: #052838;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio__nav-divider {
+    color: #A0B3BC;
+    font-size: 20px;
+}
+
+.portfolio__nav-total {
+    color: #A0B3BC;
+    font-size: 20px;
+    font-weight: 400;
 }
