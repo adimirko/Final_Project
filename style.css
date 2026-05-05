@@ -211,113 +211,139 @@ body {
     gap: 16px;
 }
 
-.about__button {}
+.portfolio {}
 
-.about__picture {}
-
-.about__img {}
-
-/* ========= PORTFOLIO SECTION ========= */
 .portfolio__top {
     display: flex;
-    width: 1680px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
+    max-width: 700px;
 }
 
-.portfolio__description {
-    /* Body L */
-    font-family: Outfit;
+.text {
+    color: var(--Secondary, #375360);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     /* 150% */
-    max-width: 700px;
-    align-self: stretch;
 }
 
-.portfolio__slider {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-
-.portfolio__cards {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-
-.portfolio__card {
-    display: flex;
-    flex-direction: column;
-    width: 544px;
-    height: 544px;
-    /* padding-top: 400px; */
-    justify-content: center;
-    align-items: center;
-    POSITION: RELATIVE;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-
-.portfolio__card:hover {
-    transform: translateY(-4px);
-}
-
-.portfolio__card-image {
-    width: 100%;
-    height: 544px;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.portfolio__card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.portfolio__card:hover .portfolio__card-image img {
-    transform: scale(1.02);
-}
-
-.portfolio__card-content {
-    height: 144px;
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    padding: 20px 24px;
-    flex-direction: column;
-    gap: 8px;
-    background: #052838;
-}
-
-.portfolio__card-title {
+.subtitle {
     color: var(--Grayscale-000, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
-    /* H4 */
-    font-family: Outfit;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    align-self: stretch;
 }
 
-.portfolio__card-text {
-    color: var(--Grayscale-300, #D7DAE2);
+.portfolio__slider {
+    position: relative;
+}
 
+.portfolio__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Brand-Primary, #052838);
+}
+
+.portfolio__arrow_prev {
+    left: -32px;
+    right: auto;
+    z-index: 10;
+}
+
+.portfolio__arrow_next {
+    right: -32px;
+    left: auto;
+    z-index: 10;
+}
+
+.portfolio__arrow-icon {}
+
+.portfolio__list {
+    display: flex;
+    gap: 24px;
+}
+
+.portfolio__item {
+    list-style-type: none;
+}
+
+.portfolio-card {
+    width: 544px;
+    height: 544px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.portfolio-card__img {}
+
+.portfolio-card__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--Brand-Primary, #052838);
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 144px;
+}
+
+.portfolio__pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio__button {
+    margin-left: auto;
+}
+
+.portfolio__pagination-number {
+    color: var(--Brand-Primary, #052838);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.portfolio__pagination-line {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 2px;
+}
+
+.portfolio__pagination-segment {
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #D7DAE2;
+}
+
+.portfolio__pagination-segment_active {
+    background: var(--Brand-Primary, #052838);
+}
+
+.portfolio-card__text {
+    color: var(--Grayscale-300, #D7DAE2);
+    margin-top: 8px;
     /* Body L */
     font-family: Outfit;
     font-size: 16px;
@@ -327,29 +353,125 @@ body {
     /* 150% */
 }
 
-.portfolio__navigation {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: "Outfit", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #375360;
+.certifications {}
+
+.certifications__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.portfolio__nav-current {
-    color: #052838;
-    font-size: 24px;
-    font-weight: 600;
+.certification-card {
+    position: relative;
+    min-height: 280px;
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--Brand-Primary, #052838);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.portfolio__nav-divider {
-    color: #A0B3BC;
-    font-size: 20px;
+.certification-card:hover {
+    background: #0C3D54;
 }
 
-.portfolio__nav-total {
-    color: #A0B3BC;
-    font-size: 20px;
+.certification-card__info {}
+
+.certification-card__text {
+    margin-top: 8px;
+    color: var(--Grayscale-300, #D7DAE2);
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 24px;
 }
+
+.certification-card__date {
+    margin-top: 8px;
+    color: #999EAD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.certification-card__badge {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    padding: 4px 12px;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.certification-card__icon {
+    position: absolute;
+    right: 32px;
+    bottom: 28px;
+}
+
+.certifications__top {
+    max-width: 100%;
+}
+
+.certifications__top .text {
+    max-width: 700px;
+}
+
+.certifications__bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 56px;
+}
+
+.certifications__button {}
+
+/* Partners section - наследует стили от portfolio */
+.partners {}
+
+.partners__top {}
+
+.partners__top .text {
+    max-width: 700px;
+}
+
+.partners__slider {}
+
+.partners-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--Brand-Primary, #052838);
+}
+
+.partners-card__img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.partners-card__content {
+    padding: 20px 24px;
+    min-height: 208px;
+    background: var(--Brand-Primary, #052838);
+}
+
+.partners-card__text {
+    max-width: 800px;
+    margin-top: 12px;
+    color: var(--Grayscale-300, #D7DAE2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.partners__bottom {}
+
+.partners__button {}
