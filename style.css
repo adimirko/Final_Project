@@ -731,7 +731,7 @@ body {
     border-radius: 8px;
 }
 
-.footer {
+< !-- FOOTER -->.footer {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -741,7 +741,7 @@ body {
     justify-content: space-between;
     width: min(100%, 1680px);
     max-width: 1680px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 0 24px;
     gap: 40px;
     grid-template-columns: 320px 520px minmax(320px, 1fr);
