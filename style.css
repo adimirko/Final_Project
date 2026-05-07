@@ -781,6 +781,7 @@ body {
     grid-template-columns: repeat(3, max-content);
     column-gap: 40px;
     row-gap: 12px;
+    height: 64px;
 }
 
 .footer__link {
