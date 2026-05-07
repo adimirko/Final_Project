@@ -9,6 +9,10 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Outfit", sans-serif;
 }
@@ -254,6 +258,18 @@ body {
     gap: 8px;
     border-radius: 100px;
     background: var(--Brand-Primary, #052838);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+.portfolio__arrow:focus {
+    outline: none;
+}
+
+.portfolio__arrow:hover {
+    background: #0C3D54;
 }
 
 .portfolio__arrow_prev {
@@ -298,6 +314,11 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     height: 144px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card:hover .portfolio-card__content {
+    background: #0C3D54;
 }
 
 .portfolio__pagination {
@@ -373,7 +394,9 @@ body {
     background: #0C3D54;
 }
 
-.certification-card__info {}
+.certification-card__info {
+    transition: all 0.3s ease-in-out;
+}
 
 .certification-card__text {
     margin-top: 8px;
@@ -458,6 +481,11 @@ body {
     padding: 20px 24px;
     min-height: 208px;
     background: var(--Brand-Primary, #052838);
+    transition: all 0.3s ease-in-out;
+}
+
+.partners-card:hover .partners-card__content {
+    background: #0C3D54;
 }
 
 .partners-card__text {

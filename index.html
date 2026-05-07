@@ -13,7 +13,7 @@
 
 <body>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <header class="header center">
             <a class="header__logo logo" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="152" height="24" viewBox="0 0 152 24" fill="none">
@@ -48,11 +48,11 @@
             </a>
 
             <nav class="header__nav nav">
-                <a class="nav__link nav__link_active" href="#">Main</a>
-                <a class="nav__link" href="#">Portfolio</a>
+                <a class="nav__link nav__link_active" href="#hero">Main</a>
+                <a class="nav__link" href="#portfolio">Portfolio</a>
                 <a class="nav__link" href="#">Price</a>
-                <a class="nav__link" href="#">Certifications</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a class="nav__link" href="#certifications">Certifications</a>
+                <a class="nav__link" href="#footer">Contacts</a>
             </nav>
 
             <a class="header__phone phone" href="tel:+447755555764">
@@ -85,7 +85,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about center padding-tb">
+    <section class="about center padding-tb" id="about">
         <div class="about__content">
             <div class="about__info">
                 <h2 class="heading">
@@ -123,7 +123,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolio center padding-tb">
+    <section id="portfolio" class="portfolio center padding-tb">
         <div class="portfolio__top">
             <h2 class="heading">
                 Our portfolio
@@ -138,10 +138,8 @@
 
         <div class="portfolio__slider">
             <button class="portfolio__arrow portfolio__arrow_prev" type="button" aria-label="Previous project">
-                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.25 22L18.025 20.225L9.8 12L18.025 3.775L16.25 2L6.25 12L16.25 22Z" fill="white" />
                 </svg>
             </button>
 
@@ -191,18 +189,63 @@
                         </div>
                     </article>
                 </li>
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/Project card4.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Hillside Villa Restoration
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                Complete restoration of a heritage property, blending classic architecture with modern
+                                comforts.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/Project card5.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Riverside Heights Residences
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                A modern riverside apartment complex with energy-efficient design and panoramic city
+                                views.
+                            </p>
+                        </div>
+                    </article>
+                </li>
+                <li class="portfolio__item">
+                    <article class="portfolio-card">
+                        <img class="portfolio-card__img" src="img/Project card6.png" alt="Metro Office Hub">
+
+                        <div class="portfolio-card__content">
+                            <h3 class="subtitle">
+                                Maple Grove Townhomes
+                            </h3>
+
+                            <p class="portfolio-card__text">
+                                A stylish suburban development offering comfort, community, and convenience.
+                            </p>
+                        </div>
+                    </article>
+                </li>
             </ul>
 
             <button class="portfolio__arrow portfolio__arrow_next" type="button" aria-label="Next project">
-                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2L18.025 12L8.025 22Z" fill="white" />
                 </svg>
             </button>
         </div>
 
-        <div class="portfolio__bottom partners__bottom">
+        <div class="portfolio__bottom">
             <div class="portfolio__pagination">
                 <span class="portfolio__pagination-number">01/02</span>
 
@@ -211,7 +254,6 @@
                     <span class="portfolio__pagination-segment"></span>
                 </span>
             </div>
-
 
             <a class="button portfolio__button" href="#">
                 <span>View Full Portfolio</span>
@@ -226,7 +268,7 @@
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section class="certifications center padding-tb">
+    <section class="certifications center padding-tb" id="certifications">
         <div class="portfolio__top certifications__top">
             <h2 class="heading">
                 Certifications & credentials
@@ -287,10 +329,10 @@
                 </span>
 
 
-                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="88" height="88"
-                    viewBox="0 0 88 88" fill="none">
+                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="74" height="74"
+                    viewBox="0 0 74 74" fill="none">
                     <path
-                        d="M35.475 50.2335L38.6834 39.7835L30.25 33.0002H40.7L44 22.7335L47.3 33.0002H57.75L49.225 39.7835L52.4334 50.2335L44 43.7252L35.475 50.2335ZM22 84.3335V56.0085C19.6778 53.4418 17.875 50.5085 16.5917 47.2085C15.3084 43.9085 14.6667 40.3946 14.6667 36.6668C14.6667 28.4779 17.5084 21.5418 23.1917 15.8585C28.875 10.1752 35.8111 7.3335 44 7.3335C52.1889 7.3335 59.125 10.1752 64.8084 15.8585C70.4917 21.5418 73.3334 28.4779 73.3334 36.6668C73.3334 40.3946 72.6917 43.9085 71.4084 47.2085C70.125 50.5085 68.3222 53.4418 66 56.0085V84.3335L44 77.0002L22 84.3335ZM44 58.6668C50.1111 58.6668 55.3056 56.5279 59.5834 52.2502C63.8611 47.9724 66 42.7779 66 36.6668C66 30.5557 63.8611 25.3613 59.5834 21.0835C55.3056 16.8057 50.1111 14.6668 44 14.6668C37.8889 14.6668 32.6945 16.8057 28.4167 21.0835C24.1389 25.3613 22 30.5557 22 36.6668C22 42.7779 24.1389 47.9724 28.4167 52.2502C32.6945 56.5279 37.8889 58.6668 44 58.6668ZM29.3334 73.4252L44 69.6668L58.6667 73.4252V62.0585C56.5278 63.2807 54.2209 64.2432 51.7459 64.946C49.2709 65.6488 46.6889 66.0002 44 66.0002C41.3111 66.0002 38.7292 65.6488 36.2542 64.946C33.7792 64.2432 31.4722 63.2807 29.3334 62.0585V73.4252Z"
+                        d="M36.6667 66C41.25 66 45.1458 64.3958 48.3542 61.1875C51.5625 57.9792 53.1667 54.0833 53.1667 49.5C53.1667 44.9167 51.5625 41.0208 48.3542 37.8125C45.1458 34.6042 41.25 33 36.6667 33C32.0833 33 28.1875 34.6042 24.9792 37.8125C21.7708 41.0208 20.1667 44.9167 20.1667 49.5C20.1667 54.0833 21.7708 57.9792 24.9792 61.1875C28.1875 64.3958 32.0833 66 36.6667 66ZM25.9417 28.2333C27.1639 27.5611 28.4625 27.0264 29.8375 26.6292C31.2125 26.2319 32.6028 25.9722 34.0083 25.85L24.75 7.33333H15.5833L25.9417 28.2333ZM47.3917 28.2333L57.8417 7.33333H48.5833L40.7917 22.9167L42.5333 26.4C43.3889 26.6444 44.2139 26.9042 45.0083 27.1792C45.8028 27.4542 46.5972 27.8056 47.3917 28.2333ZM16.1333 61.6C15.0944 59.8278 14.2847 57.9181 13.7042 55.8708C13.1236 53.8236 12.8333 51.7 12.8333 49.5C12.8333 47.3 13.1236 45.1764 13.7042 43.1292C14.2847 41.0819 15.0944 39.1722 16.1333 37.4C13.5667 38.2556 11.4583 39.7681 9.80833 41.9375C8.15833 44.1069 7.33333 46.6278 7.33333 49.5C7.33333 52.3722 8.15833 54.8931 9.80833 57.0625C11.4583 59.2319 13.5667 60.7444 16.1333 61.6ZM57.2 61.6C59.7667 60.7444 61.875 59.2319 63.525 57.0625C65.175 54.8931 66 52.3722 66 49.5C66 46.6278 65.175 44.1069 63.525 41.9375C61.875 39.7681 59.7667 38.2556 57.2 37.4C58.2389 39.1722 59.0486 41.0819 59.6292 43.1292C60.2097 45.1764 60.5 47.3 60.5 49.5C60.5 51.7 60.2097 53.8236 59.6292 55.8708C59.0486 57.9181 58.2389 59.8278 57.2 61.6ZM36.6667 73.3333C34.2222 73.3333 31.8847 72.9819 29.6542 72.2792C27.4236 71.5764 25.3611 70.6139 23.4667 69.3917C22.9167 69.5139 22.3667 69.5903 21.8167 69.6208C21.2667 69.6514 20.6861 69.6667 20.075 69.6667C14.5139 69.6667 9.77778 67.7111 5.86667 63.8C1.95556 59.8889 0 55.1528 0 49.5917C0 44.275 1.77222 39.7222 5.31667 35.9333C8.86111 32.1444 13.2306 30.0361 18.425 29.6083L3.66667 0H29.3333L36.6667 14.6667L44 0H69.6667L55 29.425C60.1944 29.9139 64.5486 32.0528 68.0625 35.8417C71.5764 39.6306 73.3333 44.1833 73.3333 49.5C73.3333 55.1222 71.3778 59.8889 67.4667 63.8C63.5556 67.7111 58.7889 69.6667 53.1667 69.6667C52.6167 69.6667 52.0514 69.6514 51.4708 69.6208C50.8903 69.5903 50.325 69.5139 49.775 69.3917C47.8806 70.6139 45.8333 71.5764 43.6333 72.2792C41.4333 72.9819 39.1111 73.3333 36.6667 73.3333ZM29.8833 59.5833L32.45 51.2417L25.6667 46.3833H34.0083L36.6667 37.5833L39.325 46.3833H47.6667L40.8833 51.2417L43.45 59.5833L36.6667 54.45L29.8833 59.5833Z"
                         fill="white" />
                 </svg>
             </article>
@@ -356,10 +398,10 @@
                     </p>
                 </div>
 
-                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="74" height="74"
-                    viewBox="0 0 74 74" fill="none">
+                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="88" height="88"
+                    viewBox="0 0 88 88" fill="none">
                     <path
-                        d="M36.6667 66C41.25 66 45.1458 64.3958 48.3542 61.1875C51.5625 57.9792 53.1667 54.0833 53.1667 49.5C53.1667 44.9167 51.5625 41.0208 48.3542 37.8125C45.1458 34.6042 41.25 33 36.6667 33C32.0833 33 28.1875 34.6042 24.9792 37.8125C21.7708 41.0208 20.1667 44.9167 20.1667 49.5C20.1667 54.0833 21.7708 57.9792 24.9792 61.1875C28.1875 64.3958 32.0833 66 36.6667 66ZM25.9417 28.2333C27.1639 27.5611 28.4625 27.0264 29.8375 26.6292C31.2125 26.2319 32.6028 25.9722 34.0083 25.85L24.75 7.33333H15.5833L25.9417 28.2333ZM47.3917 28.2333L57.8417 7.33333H48.5833L40.7917 22.9167L42.5333 26.4C43.3889 26.6444 44.2139 26.9042 45.0083 27.1792C45.8028 27.4542 46.5972 27.8056 47.3917 28.2333ZM16.1333 61.6C15.0944 59.8278 14.2847 57.9181 13.7042 55.8708C13.1236 53.8236 12.8333 51.7 12.8333 49.5C12.8333 47.3 13.1236 45.1764 13.7042 43.1292C14.2847 41.0819 15.0944 39.1722 16.1333 37.4C13.5667 38.2556 11.4583 39.7681 9.80833 41.9375C8.15833 44.1069 7.33333 46.6278 7.33333 49.5C7.33333 52.3722 8.15833 54.8931 9.80833 57.0625C11.4583 59.2319 13.5667 60.7444 16.1333 61.6ZM57.2 61.6C59.7667 60.7444 61.875 59.2319 63.525 57.0625C65.175 54.8931 66 52.3722 66 49.5C66 46.6278 65.175 44.1069 63.525 41.9375C61.875 39.7681 59.7667 38.2556 57.2 37.4C58.2389 39.1722 59.0486 41.0819 59.6292 43.1292C60.2097 45.1764 60.5 47.3 60.5 49.5C60.5 51.7 60.2097 53.8236 59.6292 55.8708C59.0486 57.9181 58.2389 59.8278 57.2 61.6ZM36.6667 73.3333C34.2222 73.3333 31.8847 72.9819 29.6542 72.2792C27.4236 71.5764 25.3611 70.6139 23.4667 69.3917C22.9167 69.5139 22.3667 69.5903 21.8167 69.6208C21.2667 69.6514 20.6861 69.6667 20.075 69.6667C14.5139 69.6667 9.77778 67.7111 5.86667 63.8C1.95556 59.8889 0 55.1528 0 49.5917C0 44.275 1.77222 39.7222 5.31667 35.9333C8.86111 32.1444 13.2306 30.0361 18.425 29.6083L3.66667 0H29.3333L36.6667 14.6667L44 0H69.6667L55 29.425C60.1944 29.9139 64.5486 32.0528 68.0625 35.8417C71.5764 39.6306 73.3333 44.1833 73.3333 49.5C73.3333 55.1222 71.3778 59.8889 67.4667 63.8C63.5556 67.7111 58.7889 69.6667 53.1667 69.6667C52.6167 69.6667 52.0514 69.6514 51.4708 69.6208C50.8903 69.5903 50.325 69.5139 49.775 69.3917C47.8806 70.6139 45.8333 71.5764 43.6333 72.2792C41.4333 72.9819 39.1111 73.3333 36.6667 73.3333ZM29.8833 59.5833L32.45 51.2417L25.6667 46.3833H34.0083L36.6667 37.5833L39.325 46.3833H47.6667L40.8833 51.2417L43.45 59.5833L36.6667 54.45L29.8833 59.5833Z"
+                        d="M35.475 50.2335L38.6834 39.7835L30.25 33.0002H40.7L44 22.7335L47.3 33.0002H57.75L49.225 39.7835L52.4334 50.2335L44 43.7252L35.475 50.2335ZM22 84.3335V56.0085C19.6778 53.4418 17.875 50.5085 16.5917 47.2085C15.3084 43.9085 14.6667 40.3946 14.6667 36.6668C14.6667 28.4779 17.5084 21.5418 23.1917 15.8585C28.875 10.1752 35.8111 7.3335 44 7.3335C52.1889 7.3335 59.125 10.1752 64.8084 15.8585C70.4917 21.5418 73.3334 28.4779 73.3334 36.6668C73.3334 40.3946 72.6917 43.9085 71.4084 47.2085C70.125 50.5085 68.3222 53.4418 66 56.0085V84.3335L44 77.0002L22 84.3335ZM44 58.6668C50.1111 58.6668 55.3056 56.5279 59.5834 52.2502C63.8611 47.9724 66 42.7779 66 36.6668C66 30.5557 63.8611 25.3613 59.5834 21.0835C55.3056 16.8057 50.1111 14.6668 44 14.6668C37.8889 14.6668 32.6945 16.8057 28.4167 21.0835C24.1389 25.3613 22 30.5557 22 36.6668C22 42.7779 24.1389 47.9724 28.4167 52.2502C32.6945 56.5279 37.8889 58.6668 44 58.6668ZM29.3334 73.4252L44 69.6668L58.6667 73.4252V62.0585C56.5278 63.2807 54.2209 64.2432 51.7459 64.946C49.2709 65.6488 46.6889 66.0002 44 66.0002C41.3111 66.0002 38.7292 65.6488 36.2542 64.946C33.7792 64.2432 31.4722 63.2807 29.3334 62.0585V73.4252Z"
                         fill="white" />
                 </svg>
             </article>
@@ -383,10 +425,10 @@
                     Winner
                 </span>
 
-                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="59" height="77"
-                    viewBox="0 0 59 77" fill="none">
+                <svg class="certification-card__icon" xmlns="http://www.w3.org/2000/svg" width="74" height="74"
+                    viewBox="0 0 74 74" fill="none">
                     <path
-                        d="M20.8083 42.9L24.0167 32.45L15.5833 25.6667H26.0333L29.3333 15.4L32.6333 25.6667H43.0833L34.5583 32.45L37.7667 42.9L29.3333 36.3917L20.8083 42.9ZM7.33333 77V48.675C5.01111 46.1083 3.20833 43.175 1.925 39.875C0.641667 36.575 0 33.0611 0 29.3333C0 21.1444 2.84167 14.2083 8.525 8.525C14.2083 2.84167 21.1444 0 29.3333 0C37.5222 0 44.4583 2.84167 50.1417 8.525C55.825 14.2083 58.6667 21.1444 58.6667 29.3333C58.6667 33.0611 58.025 36.575 56.7417 39.875C55.4583 43.175 53.6556 46.1083 51.3333 48.675V77L29.3333 69.6667L7.33333 77ZM29.3333 51.3333C35.4444 51.3333 40.6389 49.1944 44.9167 44.9167C49.1944 40.6389 51.3333 35.4444 51.3333 29.3333C51.3333 23.2222 49.1944 18.0278 44.9167 13.75C40.6389 9.47222 35.4444 7.33333 29.3333 7.33333C23.2222 7.33333 18.0278 9.47222 13.75 13.75C9.47222 18.0278 7.33333 23.2222 7.33333 29.3333C7.33333 35.4444 9.47222 40.6389 13.75 44.9167C18.0278 49.1944 23.2222 51.3333 29.3333 51.3333ZM14.6667 66.0917L29.3333 62.3333L44 66.0917V54.725C41.8611 55.9472 39.5542 56.9097 37.0792 57.6125C34.6042 58.3153 32.0222 58.6667 29.3333 58.6667C26.6444 58.6667 24.0625 58.3153 21.5875 57.6125C19.1125 56.9097 16.8056 55.9472 14.6667 54.725V66.0917Z"
+                        d="M36.6667 66C41.25 66 45.1458 64.3958 48.3542 61.1875C51.5625 57.9792 53.1667 54.0833 53.1667 49.5C53.1667 44.9167 51.5625 41.0208 48.3542 37.8125C45.1458 34.6042 41.25 33 36.6667 33C32.0833 33 28.1875 34.6042 24.9792 37.8125C21.7708 41.0208 20.1667 44.9167 20.1667 49.5C20.1667 54.0833 21.7708 57.9792 24.9792 61.1875C28.1875 64.3958 32.0833 66 36.6667 66ZM25.9417 28.2333C27.1639 27.5611 28.4625 27.0264 29.8375 26.6292C31.2125 26.2319 32.6028 25.9722 34.0083 25.85L24.75 7.33333H15.5833L25.9417 28.2333ZM47.3917 28.2333L57.8417 7.33333H48.5833L40.7917 22.9167L42.5333 26.4C43.3889 26.6444 44.2139 26.9042 45.0083 27.1792C45.8028 27.4542 46.5972 27.8056 47.3917 28.2333ZM16.1333 61.6C15.0944 59.8278 14.2847 57.9181 13.7042 55.8708C13.1236 53.8236 12.8333 51.7 12.8333 49.5C12.8333 47.3 13.1236 45.1764 13.7042 43.1292C14.2847 41.0819 15.0944 39.1722 16.1333 37.4C13.5667 38.2556 11.4583 39.7681 9.80833 41.9375C8.15833 44.1069 7.33333 46.6278 7.33333 49.5C7.33333 52.3722 8.15833 54.8931 9.80833 57.0625C11.4583 59.2319 13.5667 60.7444 16.1333 61.6ZM57.2 61.6C59.7667 60.7444 61.875 59.2319 63.525 57.0625C65.175 54.8931 66 52.3722 66 49.5C66 46.6278 65.175 44.1069 63.525 41.9375C61.875 39.7681 59.7667 38.2556 57.2 37.4C58.2389 39.1722 59.0486 41.0819 59.6292 43.1292C60.2097 45.1764 60.5 47.3 60.5 49.5C60.5 51.7 60.2097 53.8236 59.6292 55.8708C59.0486 57.9181 58.2389 59.8278 57.2 61.6ZM36.6667 73.3333C34.2222 73.3333 31.8847 72.9819 29.6542 72.2792C27.4236 71.5764 25.3611 70.6139 23.4667 69.3917C22.9167 69.5139 22.3667 69.5903 21.8167 69.6208C21.2667 69.6514 20.6861 69.6667 20.075 69.6667C14.5139 69.6667 9.77778 67.7111 5.86667 63.8C1.95556 59.8889 0 55.1528 0 49.5917C0 44.275 1.77222 39.7222 5.31667 35.9333C8.86111 32.1444 13.2306 30.0361 18.425 29.6083L3.66667 0H29.3333L36.6667 14.6667L44 0H69.6667L55 29.425C60.1944 29.9139 64.5486 32.0528 68.0625 35.8417C71.5764 39.6306 73.3333 44.1833 73.3333 49.5C73.3333 55.1222 71.3778 59.8889 67.4667 63.8C63.5556 67.7111 58.7889 69.6667 53.1667 69.6667C52.6167 69.6667 52.0514 69.6514 51.4708 69.6208C50.8903 69.5903 50.325 69.5139 49.775 69.3917C47.8806 70.6139 45.8333 71.5764 43.6333 72.2792C41.4333 72.9819 39.1111 73.3333 36.6667 73.3333ZM29.8833 59.5833L32.45 51.2417L25.6667 46.3833H34.0083L36.6667 37.5833L39.325 46.3833H47.6667L40.8833 51.2417L43.45 59.5833L36.6667 54.45L29.8833 59.5833Z"
                         fill="white" />
                 </svg>
             </article>
@@ -421,10 +463,8 @@
 
         <div class="portfolio__slider partners__slider">
             <button class="portfolio__arrow portfolio__arrow_prev" type="button" aria-label="Previous partner">
-                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.25 22L18.025 20.225L9.8 12L18.025 3.775L16.25 2L6.25 12L16.25 22Z" fill="white" />
                 </svg>
             </button>
 
@@ -444,11 +484,39 @@
                 </div>
             </article>
 
+            <article class="partners-card">
+                <img class="partners-card__img" src="img/Project card bg2.png" alt="CityPoint Retail Center">
+
+                <div class="partners-card__content">
+                    <h3 class="subtitle">
+                        Oakwood Family Estate
+                    </h3>
+
+                    <p class="partners-card__text">
+                        Luxury interior transformation with premium finishes and smart-home integration. A modern
+                        riverside apartment complex with energy-efficient design and panoramic city views.
+                    </p>
+                </div>
+            </article>
+
+            <article class="partners-card">
+                <img class="partners-card__img" src="img/Project card bg3.png" alt="CityPoint Retail Center">
+
+                <div class="partners-card__content">
+                    <h3 class="subtitle">
+                        Skyline Penthouse Remode
+                    </h3>
+
+                    <p class="partners-card__text">
+                        A stylish suburban development offering comfort, community, and convenience. Complete
+                        restoration of a heritage property, blending classic architecture with modern comforts.
+                    </p>
+                </div>
+            </article>
+
             <button class="portfolio__arrow portfolio__arrow_next" type="button" aria-label="Next partner">
-                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2L18.025 12L8.025 22Z" fill="white" />
                 </svg>
             </button>
         </div>
@@ -476,7 +544,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="faq center padding-tb-mini">
+    <section class="faq center padding-tb-mini" id="faq">
         <div class="faq__content">
             <div class="faq__heading">
                 <h2 class="heading">
@@ -509,7 +577,7 @@
                     </div>
                 </article>
 
-                <article class="faq__item faq__item_active">
+                <article class="faq__item">
                     <button class="faq__button" type="button">
                         <span class="faq__question">
                             How long will my project take?
@@ -518,7 +586,7 @@
                         <span class="faq__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
-                                <path d="M7 14L12 9L17 14" stroke="#052838" stroke-width="2" stroke-linecap="round"
+                                <path d="M7 10L12 15L17 10" stroke="#052838" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </span>
@@ -628,7 +696,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta center padding-tb">
+    <section class="cta center padding-tb" id="cta">
         <div class="cta__content">
             <div class="cta__info">
                 <h2 class="heading cta__title">
@@ -675,7 +743,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer center padding-tb-mini">
+    <footer class="footer center padding-tb-mini" id="footer">
         <div class="footer__content">
             <div class="footer__brand">
                 <a class="footer__logo logo" href="#">
@@ -771,11 +839,11 @@
             </div>
 
             <nav class="footer__nav" aria-label="Footer navigation">
-                <a class="footer__link" href="#">Main</a>
+                <a class="footer__link" href="#hero">Main</a>
                 <a class="footer__link" href="#">Price</a>
-                <a class="footer__link" href="#">Contacts</a>
-                <a class="footer__link" href="#">Portfolio</a>
-                <a class="footer__link" href="#">Certifications</a>
+                <a class="footer__link" href="#footer">Contacts</a>
+                <a class="footer__link" href="#portfolio">Portfolio</a>
+                <a class="footer__link" href="#certifications">Certifications</a>
             </nav>
 
             <div class="footer__form-block">
