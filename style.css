@@ -558,13 +558,17 @@ body {
 }
 
 .faq__answer {
-    display: none;
     max-width: 760px;
-    padding-bottom: 32px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding-bottom: 0;
+    transition: max-height 300ms ease, opacity 300ms ease, padding-bottom 300ms ease;
 }
 
 .faq__item_active .faq__answer {
-    display: block;
+    opacity: 1;
+    padding-bottom: 32px;
 }
 
 .faq__item_active .faq__button {
